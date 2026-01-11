@@ -2,7 +2,7 @@
 
 A specialized Computational Fluid Dynamics (CFD) toolkit that bridges the gap between digital images and aerodynamic simulation. This project allows users to extract geometric shapes from images using Computer Vision and perform flow analysis using the **Source Panel Method** and **Navier-Stokes solvers**.
 
-## **🚀 Features**
+## **Features**
 
 * **Geometry Extraction:** Uses OpenCV and Canny edge detection to extract $(x, y)$ coordinates from images (e.g., airfoils, cylinders, or custom shapes).  
 * **Source Panel Method:** Implements a 2D potential flow solver to calculate:  
@@ -12,14 +12,14 @@ A specialized Computational Fluid Dynamics (CFD) toolkit that bridges the gap be
 * **Navier-Stokes Solver:** Includes a 2D incompressible flow solver (Lid-Driven Cavity) to model viscous flow patterns.  
 * **Visualization:** Generates high-quality streamline plots, pressure contours, and velocity fields using Matplotlib.
 
-## **📂 Project Structure**
+## **Project Structure**
 
 * shapesdetection.py: Processes input images (.png, .jpg) to extract edge coordinates.  
 * ObjectDetectionAirFoil.py: The main solver. Interpolates shape data and runs the Source Panel Method simulation.  
 * CFD.py: Core logic for potential flow calculations and streamline generation.  
 * multi.py: A finite-difference solver for the Incompressible Navier-Stokes equations.
 
-## **🛠️ Installation**
+## **Installation**
 
 1. **Clone the repository:**  
    git clone \[https://github.com/ADZIT7/ImageDetectionCFD.git\](https://github.com/ADZIT7/ImageDetectionCFD.git)  
@@ -28,7 +28,7 @@ A specialized Computational Fluid Dynamics (CFD) toolkit that bridges the gap be
 2. **Install dependencies:**  
    pip install \-r requirements.txt
 
-## **📊 Usage**
+## **Usage**
 
 ### **1\. Shape Extraction**
 
@@ -42,7 +42,7 @@ Ensure your coordinate file (e.g., square2.dat) is referenced in ObjectDetection
 
 python ObjectDetectionAirFoil.py
 
-## **🧪 Mathematical Background**
+## **Mathematical Background**
 
 The potential flow solver represents the body as a series of $N$ panels. It solves a system of linear equations to find source strengths ($\\lambda$) and circulation ($\\Gamma$) such that the flow is tangent to the surface at every control point:
 
@@ -50,6 +50,6 @@ $$ \\sum\_{j=1}^{N} \\lambda\_j A\_{ij} \+ \\vec{V}\_{\\infty} \\cdot \\vec{n}\_
 
 The Navier-Stokes solver (multi.py) utilizes a Pressure-Poisson equation to ensure mass conservation in incompressible flow.
 
-## **📜 License**
+## **\License**
 
 Distributed under an All Rights Reserved License. See `LICENSE` for more information. Contact me if you’re interested in purchasing a license for commercial use.
