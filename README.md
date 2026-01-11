@@ -22,17 +22,27 @@ A specialized Computational Fluid Dynamics (CFD) toolkit that bridges the gap be
 ## **Installation**
 
 1. **Clone the repository:**  
+   ```
    git clone \[https://github.com/ADZIT7/ImageDetectionCFD.git\](https://github.com/ADZIT7/ImageDetectionCFD.git)  
    cd ImageDetectionCFD
+   ```
    
 2. **Create and activate a virtual environment**
+
   Using a virtual environment is strongly recommended to isolate dependencies.
+
   **macOS / Linux**
-  `python3 -m venv venv`
-  `source venv/bin/activate`
+  ```
+  python3 -m venv venv
+  source venv/bin/activate
+  ```
+  
   **Windows (PowerShell)**
-  `python -m venv venv`
-  `venv\Scripts\activate`
+  ```
+  python -m venv venv
+  venv\Scripts\activate
+  ```
+  
   Once activated, your terminal prompt should show `(venv)`.
 
 3. **Install dependencies:**  
