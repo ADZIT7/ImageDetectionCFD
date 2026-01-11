@@ -72,6 +72,6 @@ $$ \\sum\_{j=1}^{N} \\lambda\_j A\_{ij} \+ \\vec{V}\_{\\infty} \\cdot \\vec{n}\_
 
 The Navier-Stokes solver (multi.py) utilizes a Pressure-Poisson equation to ensure mass conservation in incompressible flow.
 
-## **\License**
+## **License**
 
 Distributed under an All Rights Reserved License. See `LICENSE` for more information. Contact me if you’re interested in purchasing a license for commercial use.
