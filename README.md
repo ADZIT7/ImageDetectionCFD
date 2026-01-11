@@ -23,7 +23,7 @@ A specialized Computational Fluid Dynamics (CFD) toolkit that bridges the gap be
 
 1. **Clone the repository:**  
    ```
-   git clone \[https://github.com/ADZIT7/ImageDetectionCFD.git\](https://github.com/ADZIT7/ImageDetectionCFD.git)  
+   git clone https://github.com/ADZIT7/ImageDetectionCFD.git
    cd ImageDetectionCFD
    ```
    
@@ -46,7 +46,9 @@ A specialized Computational Fluid Dynamics (CFD) toolkit that bridges the gap be
   Once activated, your terminal prompt should show `(venv)`.
 
 3. **Install dependencies:**  
+   ```
    pip install \-r requirements.txt
+   ```
 
 ## **Usage**
 
